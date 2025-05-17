@@ -12,7 +12,7 @@ function App() {
   );
 }
 
-const AppEntryPoint = process.env.EXPO_PUBLIC_STORYBOOK_ENABLED === "true" ? require("./.storybook").default : App;
+const AppEntryPoint = process.env.EXPO_PUBLIC_STORYBOOK_ENABLED === "true" ? require("./.storybook/react-native").default : App;
 
 const styles = StyleSheet.create({
   container: {
