@@ -1,5 +1,6 @@
-.idea
-.obsidian
+.*
+!.storybook
+
 docs-local
 
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
