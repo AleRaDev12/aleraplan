@@ -1,6 +1,17 @@
 import type { Preview } from "@storybook/react";
+import { withBackgrounds } from "@storybook/addon-ondevice-backgrounds";
+import { AppProvidersIncludedStorybook } from "../Providers";
 
 const preview: Preview = {
+  decorators: [
+    withBackgrounds,
+    (Story) => (
+      <AppProvidersIncludedStorybook>
+        <Story />
+      </AppProvidersIncludedStorybook>
+    ),
+  ],
+
   parameters: {
     controls: {
       matchers: {
@@ -10,7 +21,7 @@ const preview: Preview = {
     },
   },
 
-  tags: ["autodocs"]
+  tags: ["autodocs"],
 };
 
 export default preview;

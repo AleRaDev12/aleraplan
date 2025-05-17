@@ -17,6 +17,7 @@
   "dependencies": {
     "@gorhom/bottom-sheet": "^5.1.2",
     "@react-native-async-storage/async-storage": "^2.1.2",
+    "date-fns": "^4.1.0",
     "expo": "^53.0.9",
     "expo-constants": "~17.1.5",
     "expo-status-bar": "~2.2.3",
@@ -24,11 +25,11 @@
     "react-dom": "19.0.0",
     "react-native": "0.79.2",
     "react-native-gesture-handler": "~2.24.0",
+    "react-native-paper": "^5.14.4",
     "react-native-reanimated": "~3.17.4",
     "react-native-safe-area-context": "5.4.0",
     "react-native-svg": "15.11.2",
     "react-native-web": "^0.20.0",
-    "date-fns": "^4.1.0",
     "zod": "^3.24.4"
   },
   "devDependencies": {
