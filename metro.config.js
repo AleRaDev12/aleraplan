@@ -1,3 +1,7 @@
+const {
+  withNativeWind: withNativeWind
+} = require("nativewind/metro");
+
 const path = require("path");
 const { getDefaultConfig } = require("expo/metro-config");
 
