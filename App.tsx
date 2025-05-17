@@ -8,7 +8,7 @@ function App() {
   );
 }
 
-const AppEntryPoint = process.env.EXPO_PUBLIC_STORYBOOK_ENABLED === "true" ? require("./.rnstorybook").default : App;
+const AppEntryPoint = process.env.EXPO_PUBLIC_STORYBOOK_ENABLED === "true" ? require("./.storybook").default : App;
 
 const styles = StyleSheet.create({
   container: {
