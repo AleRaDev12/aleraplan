@@ -1,7 +1,6 @@
 .*
 !.storybook
 !.prettierrc
-!.eslintignore
 
 docs-local
 docs/Code style.md
