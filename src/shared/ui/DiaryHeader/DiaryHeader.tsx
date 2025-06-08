@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Icon, Text } from 'react-native-paper';
-import { dateUtils } from '../../../../shared/lib/date';
+import { dateUtils } from '../../lib/date';
 
 const ICON_SIZE = 24;
 
