@@ -1,6 +1,6 @@
 import { withBackgrounds } from "@storybook/addon-ondevice-backgrounds";
 import type { Preview } from "@storybook/react";
-import { AppProvidersIncludedStorybook } from "../../Providers";
+import { AppProvidersIncludedStorybook } from '../../src/app/Providers';
 
 const preview: Preview = {
   decorators: [

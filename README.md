@@ -11,10 +11,9 @@ Aleraplan is a mobile productivity app designed to help you build better days th
 - Offline-first experience with no account required
 
 🧱 Built with:
-- Expo (React Native 52)
+- Expo 53 (React Native)
 - Zustand for state management
 - TanStack Query + AsyncStorage
-- Gluestack UI
 - Feature-Sliced Design
 
 > Future versions will include habit tracking, weekly/monthly reflections, event planning and cloud sync.
