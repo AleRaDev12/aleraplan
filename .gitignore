@@ -1,5 +1,7 @@
 .*
 !.storybook
+!.prettierrc
+!.eslintignore
 
 docs-local
 
