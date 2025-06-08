@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { View, StyleSheet } from 'react-native';
-import { DiaryHeader } from '../../shared/ui/DiaryHeader';
+import { DiaryHeader } from '../../entities/diary';
 import { EditableDiaryText, useDiaryEdit, FutureMessage } from '../../features/diary-editing';
 import { DiaryNavigationPanel, useDiaryNavigation } from '../../features/diary-navigation';
 import { dateUtils } from '../../shared/lib/date';
