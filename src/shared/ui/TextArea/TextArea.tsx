@@ -1,6 +1,6 @@
 import { StyleSheet, View, TextInput, ScrollView, Text } from 'react-native';
 import { useTheme } from 'react-native-paper';
-import { COLORS } from '../../lib/constants/colors';
+import { COLORS } from '../../lib/constants';
 
 export type TProps = {
   text: string;
