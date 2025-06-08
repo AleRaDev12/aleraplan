@@ -13,6 +13,7 @@ type TDiaryNavigationActions = {
 };
 
 export const useDiaryNavigationStore = create<TDiaryNavigationState & TDiaryNavigationActions>(
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   (set: any, get: any) => ({
     currentDate: dateUtils.getCurrentDate(),
 

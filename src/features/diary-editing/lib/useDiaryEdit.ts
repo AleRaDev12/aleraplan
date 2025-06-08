@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { useDiaryEntry, useSaveDiaryEntry, useDeleteDiaryEntry } from '../../../entities/diary';
+import { logger } from '../../../shared/lib/logger';
 
 type TUseDiaryEditProps = {
   date: string;
@@ -21,7 +22,7 @@ export const useDiaryEdit = ({ date }: TUseDiaryEditProps) => {
     } else if (!entry) {
       setCurrentText('');
     }
-  }, [entry?.text]);
+  }, [entry, entry?.text]);
 
   useEffect(() => {
     setIsEditing(false);
@@ -55,6 +56,7 @@ export const useDiaryEdit = ({ date }: TUseDiaryEditProps) => {
         },
         onError: error => {
           setIsSaving(false);
+          logger.error('Failed to delete diary entry:', error);
           setSaveError(error instanceof Error ? error.message : 'Delete error');
         },
       });
@@ -68,6 +70,7 @@ export const useDiaryEdit = ({ date }: TUseDiaryEditProps) => {
           },
           onError: error => {
             setIsSaving(false);
+            logger.error('Failed to save diary entry:', error);
             setSaveError(error instanceof Error ? error.message : 'Save error');
           },
         },
